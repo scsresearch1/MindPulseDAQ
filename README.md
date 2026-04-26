@@ -1,48 +1,16 @@
-# MindPulseDAQ - Android DAQ App
+# MindPulse Admin Portal (web)
 
-MindPulseDAQ is a focused Android data-acquisition app with a strict runtime flow:
-
-1. BLE connection to hardware
-2. Subject details (name + 6-digit case ID)
-3. Live collection from BLE stream
-4. Manual upload with `Store Test Data`
-
-The app writes session records to Firebase Realtime Database at:
-`mindpulse/v1/sessions/{timestamp_caseId}`.
+Vite + React analyzer for MindPulse pilot sessions (Firebase RTDB + local export fallback).
 
 ## Build
 
-**Option 1: Android Studio (recommended)**  
-Open the `MindPulseDAQ` folder in Android Studio. It will sync Gradle and download dependencies. Then use **Build → Make Project** or run on an emulator/device.
-
-**Option 2: Command line**  
-If you have Gradle installed, run `gradle wrapper` first to generate the wrapper, then:
-
 ```bash
-./gradlew assembleDebug   # Windows: gradlew.bat assembleDebug
-./gradlew installDebug    # Install to connected device
+npm ci
+npm run build
 ```
 
-## Project Structure
+## Netlify
 
-```
-app/src/main/java/com/mindpulse/mindpulseui/
-├── MainActivity.kt
-├── MindPulseApp.kt
-├── Theme.kt
-├── data/
-│   ├── BleBandManager.kt
-│   ├── MindPulseTelemetryStore.kt
-│   └── FirebaseRtdbUploader.kt
-└── ... (supporting UI/data files)
-```
+Connect this repository with **base directory** left empty (root). Build command `npm run build`, publish directory `dist`. No environment variables required; config is in `src/config/appDeployConfig.ts`.
 
-## Temporary Firebase seed script
-
-Use this to quickly push a temporary DAQ record into the same RTDB used by EndUserSimulation:
-
-```bash
-node scripts/push-temp-session.mjs 123456 SubjectA
-```
-
-Arguments are optional; defaults are used if omitted.
+> **Note:** The GitHub repository may still be named `MindPulseDAQ` for historical reasons; this tree is **only** the web admin app (the Android DAQ app is not maintained here).

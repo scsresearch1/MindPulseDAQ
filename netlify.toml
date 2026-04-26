@@ -1,0 +1,11 @@
+# MindPulse Analyzer — static Vite build. No Netlify environment variables required.
+# Site base directory: repository root (this file lives next to package.json).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

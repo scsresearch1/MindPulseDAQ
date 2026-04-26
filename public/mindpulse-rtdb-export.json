@@ -1,0 +1,1688 @@
+{
+  "mindpulse": {
+    "v1": {
+      "_schema_info": {
+        "databaseUrl": "https://mindpulse-82eb0-default-rtdb.asia-southeast1.firebasedatabase.app",
+        "description": "Completed 60s experiments. Each new session is a child of .../sessions/ (app uses push() for a unique id). The _example child is a reference shape for charting; safe to remove in production.",
+        "emotionTimeSeriesItemShape": {
+          "anger": "number",
+          "disgust": "number",
+          "fear": "number",
+          "happy": "number",
+          "neutral": "number",
+          "sadness": "number",
+          "sessionTimeMs": "number — ms from start of 60s activity",
+          "surprise": "number"
+        },
+        "liveSessionsPath": "/mindpulse/v1/sessions",
+        "projectId": "mindpulse-82eb0",
+        "schemaVersion": 1,
+        "topLevelFieldDescriptions": {
+          "age": "Number (years)",
+          "clientSessionId": "UUID for this run in the client.",
+          "emotionTimeSeries": "Array of points for visualization: sessionTimeMs + seven expression probabilities 0..1, aligned to the stimulus timeline.",
+          "gender": "String: 'male' | 'female' | 'other' | 'prefer_not'",
+          "participantName": "String",
+          "schemaVersion": "Number; increment when the stored shape changes.",
+          "sessionEndedAt": "ISO-8601 string when the 60s activity ended in the browser.",
+          "sessionMeta": "Object: hadCamera, modelsLoaded, usedFaceInference (booleans).",
+          "submittedAt": "Server timestamp (ms) when the record was received."
+        },
+        "updatedAt": "2026-04-23T13:57:40.794Z",
+        "updatedByScript": "initialize-rtdb-schema.mjs"
+      },
+      "consent": {
+        "consent_1777133113370_352050": {
+          "age": 38,
+          "caseId": "352050",
+          "consentSubmittedAt": "2026-04-25T16:05:13.370Z",
+          "gender": "male",
+          "participantName": "Dr. Niladri Dey",
+          "responses": [
+            {
+              "answer": "yes",
+              "question": "Do you understand that this session involves wearing a sensor device and interacting with a screen-based activity?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you understand that your physiological data (e.g., heart rate, activity signals) will be collected during this session?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you consent to the collection of your physiological data via the wearable device?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you understand that your facial expressions may be captured and analyzed using the device camera?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you consent to the capture and analysis of your facial expressions during the session?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you consent to the recording of your interaction data (such as mouse movements and screen interactions)?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you understand that your data will be used for research and product development purposes?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you consent to your data being anonymized and used for training machine learning models?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you understand that your participation in this session is voluntary?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you understand that you can withdraw from the session at any time without any consequences?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you confirm that you are participating willingly and feel comfortable continuing with this session?"
+            },
+            {
+              "answer": "yes",
+              "question": "Do you acknowledge that this system does not provide any medical or psychological diagnosis?"
+            }
+          ],
+          "schemaVersion": 1,
+          "submittedAt": 1777133115176
+        }
+      },
+      "sessions": {
+        "1777133286329_352050": {
+          "age": 38,
+          "caseId": "352050",
+          "consent": {
+            "allAccepted": true,
+            "caseId": "352050",
+            "consentSubmittedAt": "2026-04-25T16:08:10.089050Z",
+            "consentVersion": 1,
+            "participantName": "Dr. Niladri"
+          },
+          "daqUpdatedAt": "2026-04-25T16:08:10.089050Z",
+          "emotionTimeSeries": [
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 253.39999999850988,
+              "surprise": 0
+            },
+            {
+              "anger": 0.0022512481082230806,
+              "caseId": "352050",
+              "disgust": 0.000044062762754037976,
+              "fear": 1.6900157717714137e-8,
+              "happy": 0.0010743613820523024,
+              "neutral": 0.9963418841362,
+              "sadness": 0.00015749354497529566,
+              "sessionTimeMs": 4000.199999999255,
+              "surprise": 0.00013099001080263406
+            },
+            {
+              "anger": 0.00002227241566288285,
+              "caseId": "352050",
+              "disgust": 0.5347716808319092,
+              "fear": 0.000051394370530033484,
+              "happy": 0.04026351124048233,
+              "neutral": 0.2635737359523773,
+              "sadness": 0.1586211770772934,
+              "sessionTimeMs": 12750.599999999627,
+              "surprise": 0.002696316922083497
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 17264.89999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 21000.89999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 23004.5,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 24001.89999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 25006.799999998882,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 26000.599999999627,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 27252.89999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 29006.199999999255,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 30011.099999999627,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 31260.89999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 32261.099999999627,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 33250.5,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 34255.79999999888,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 36005.199999999255,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 39000.5,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 42253.39999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 44752,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 48005.39999999851,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 52012.59999999963,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 56511.09999999963,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 58755.199999999255,
+              "surprise": 0
+            },
+            {
+              "anger": 0,
+              "caseId": "352050",
+              "disgust": 0,
+              "fear": 0,
+              "happy": 0,
+              "neutral": 1,
+              "sadness": 0,
+              "sessionTimeMs": 59255.79999999888,
+              "surprise": 0
+            }
+          ],
+          "gender": "male",
+          "participantName": "Dr. Niladri",
+          "physicalTimeSeries": [
+            {
+              "autonomicConfidence": 90,
+              "autonomicStability": "Stable",
+              "autonomicState": "Focused",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 320,
+              "caseId": "352050",
+              "cognitiveReadiness": "Ready for deep work",
+              "diastolic": 66,
+              "focusIndex": 87,
+              "heartRate": 116,
+              "hrvRmssd": 64,
+              "mentalLoad": "Low",
+              "restingHeartRate": 64,
+              "sessionTimeMs": 0,
+              "spo2": 87,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 90,
+              "autonomicStability": "Stable",
+              "autonomicState": "Focused",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 320,
+              "caseId": "352050",
+              "cognitiveReadiness": "Ready for deep work",
+              "diastolic": 66,
+              "focusIndex": 87,
+              "heartRate": 116,
+              "hrvRmssd": 64,
+              "mentalLoad": "Low",
+              "restingHeartRate": 64,
+              "sessionTimeMs": 13,
+              "spo2": 87,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 321,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 2415,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 323,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 4816,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 325,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 7265,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 326,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 9667,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 327,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 12072,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 328,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 14473,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 329,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 16874,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 331,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 19276,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 21677,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 24079,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 26479,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 28881,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 31282,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 33685,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 36087,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 38490,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 40921,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 43323,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 45729,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 50298,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 52741,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 55143,
+              "spo2": 86,
+              "systolic": 130
+            },
+            {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "caseId": "352050",
+              "cognitiveReadiness": "Take short recovery",
+              "diastolic": 66,
+              "focusIndex": 31,
+              "heartRate": 116,
+              "hrvRmssd": 22,
+              "mentalLoad": "High",
+              "restingHeartRate": 90,
+              "sessionTimeMs": 57545,
+              "spo2": 86,
+              "systolic": 130
+            }
+          ],
+          "schemaVersion": 1,
+          "sessionEndedAt": "2026-04-25T16:08:06.329Z",
+          "sessionMeta": {
+            "capturedAt": "2026-04-25T16:08:10.089050Z",
+            "collectionMode": "ble_live",
+            "derivedFillAllowed": true,
+            "directFlags": {
+              "battery": true,
+              "bloodPressure": false,
+              "heartRate": true,
+              "spo2": true,
+              "temperature": false
+            },
+            "sampleCount": 25,
+            "telemetrySnapshot": {
+              "autonomicConfidence": 71,
+              "autonomicStability": "Variable",
+              "autonomicState": "Stressed",
+              "barometricPressure": 1014,
+              "batteryDaysRemaining": 8,
+              "batteryLevel": 88,
+              "bleConnected": true,
+              "blePackets": [
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133170418,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 74 01 00",
+                  "parseHint": "RESP opcode=0x09(LiveVitals) len=25 HR@22=116 SpO2@21=86",
+                  "timestampMs": 1777133171285,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133171868,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 74 01 00",
+                  "parseHint": "RESP opcode=0x09(LiveVitals) len=25 HR@22=116 SpO2@21=86",
+                  "timestampMs": 1777133172295,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 74 01 00",
+                  "parseHint": "RESP opcode=0x09(LiveVitals) len=25 HR@22=116 SpO2@21=86",
+                  "timestampMs": 1777133173331,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133173395,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 74 01 00",
+                  "parseHint": "RESP opcode=0x09(LiveVitals) len=25 HR@22=116 SpO2@21=86",
+                  "timestampMs": 1777133174284,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133174899,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133174956,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133176407,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133177910,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 36 16 06 F4 00 00 00 00 00 00 F7",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133177995,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133179416,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133179834,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133180921,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133182426,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133183931,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133184707,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133185435,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133186940,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 36 25 06 F4 00 00 00 00 00 00 06",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133187182,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133188452,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133188834,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133189957,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133191460,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133192966,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133193033,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133194472,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133195977,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 36 34 06 F4 00 00 00 00 00 00 15",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133196031,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133197482,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133197570,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133198990,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133200499,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133202008,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133202068,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133203513,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133205020,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 36 43 06 F4 00 00 00 00 00 00 24",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133205188,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133206525,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133206609,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133208036,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133209542,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133211048,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133211709,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133214720,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133216266,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 36 54 06 F4 00 00 00 00 00 00 35",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133216358,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133217773,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133217819,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133219278,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133220784,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133222290,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133222356,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133223797,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133225301,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 03 06 F4 00 00 00 00 00 00 E5",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133225357,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133226805,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133227079,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133228311,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133229814,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133231317,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133231957,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133232820,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133234326,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 12 06 F4 00 00 00 00 00 00 F4",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133234394,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133235831,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133235894,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133237334,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133238839,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133240343,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133240432,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133241876,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133243381,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 21 06 F4 00 00 00 00 00 00 03",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133243434,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133244886,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133244969,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133246391,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133247893,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133249398,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133249844,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133250903,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133252409,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 30 06 F4 00 00 00 00 00 00 12",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133252469,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133253913,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133253970,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133255419,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133256925,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133258430,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133258769,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133259935,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133261440,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 41 06 F4 00 00 00 00 00 00 23",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133262033,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133262946,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133263683,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133264452,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133265959,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133267464,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133267771,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133268968,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133270475,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 49 06 F4 00 00 00 00 00 00 2B",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133270544,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133271977,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133272043,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133273483,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133274988,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133276492,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 59 00 01 00 00 00 00 00 00 00 00 F8",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=89",
+                  "timestampMs": 1777133276731,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133277996,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133279498,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 37 59 06 F4 00 00 00 00 00 00 3B",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133279993,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42",
+                  "parseHint": "WRITE cmd=0x42 (GetUserInfo)",
+                  "timestampMs": 1777133281003,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "42 01 19 AA 41 3B 38 38 38 38 38 00 00 00 00 9A",
+                  "parseHint": "RESP opcode=0x42(UserInfo?) len=16",
+                  "timestampMs": 1777133281646,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43",
+                  "parseHint": "WRITE cmd=0x43 (GetDayData)",
+                  "timestampMs": 1777133282507,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44",
+                  "parseHint": "WRITE cmd=0x44 (GetSleepData)",
+                  "timestampMs": 1777133284012,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13",
+                  "parseHint": "WRITE cmd=0x13 (GetBattery)",
+                  "timestampMs": 1777133285518,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "13 52 00 39 58 00 01 00 00 00 00 00 00 00 00 F7",
+                  "parseHint": "RESP opcode=0x13(Battery) len=16 Battery%@4=88",
+                  "timestampMs": 1777133285582,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17",
+                  "parseHint": "WRITE cmd=0x17 (GetHeartBreath)",
+                  "timestampMs": 1777133287023,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41",
+                  "parseHint": "WRITE cmd=0x41 (GetDeviceTime)",
+                  "timestampMs": 1777133288528,
+                  "uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+                },
+                {
+                  "hexPayload": "41 26 04 25 21 38 08 06 F4 00 00 00 00 00 00 EB",
+                  "parseHint": "RESP opcode=0x41(DeviceTime?) len=16",
+                  "timestampMs": 1777133288995,
+                  "uuid": "0000fff7-0000-1000-8000-00805f9b34fb"
+                }
+              ],
+              "bleStatus": "Connected. Polling commands...",
+              "bodyTempC": 36.555294036865234,
+              "caloriesActive": 332,
+              "cognitiveReadiness": "Take short recovery",
+              "connectedDeviceName": "J2208A2 3AF7",
+              "diastolic": 66,
+              "directBattery": true,
+              "directBloodPressure": false,
+              "directHeartRate": true,
+              "directSpo2": true,
+              "directTemperature": false,
+              "distanceKm": 4.37000036239624,
+              "focusIndex": 31,
+              "focusTrend": [
+                31,
+                31,
+                31,
+                31,
+                31,
+                31,
+                31
+              ],
+              "heartRate": 116,
+              "hourlyActivity": [
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95
+              ],
+              "hrvRmssd": 22,
+              "hrvTrend": [
+                22,
+                22,
+                22,
+                22,
+                22,
+                22,
+                22
+              ],
+              "lastBlePacketAtMs": 1777133288995,
+              "mentalLoad": "High",
+              "recoveryState": "Sympathetic",
+              "restingHeartRate": 90,
+              "sleep": {
+                "awakeMinutes": 50,
+                "deepMinutes": 109,
+                "lightMinutes": 175,
+                "remMinutes": 122,
+                "totalMinutes": 406
+              },
+              "sleepScore": 58,
+              "spo2": 86,
+              "stepsToday": 8740,
+              "systolic": 130,
+              "vitalSparkline": [
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95,
+                95
+              ]
+            }
+          },
+          "submittedAt": 1777133286393
+        }
+      }
+    }
+  }
+}
