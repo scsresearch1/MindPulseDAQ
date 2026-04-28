@@ -86,7 +86,7 @@ function SessionReportCard({ session }: { session: SessionRecord }) {
 }
 
 export function ResearchCalendarPage() {
-  const { byDay, loading, error, notice, sessions, source } = useMindPulseData()
+  const { byDay, loading, error, notice, sessions, source, reload } = useMindPulseData()
   const today = new Date()
   const [cursor, setCursor] = useState(() => new Date(today.getFullYear(), today.getMonth(), 1))
   const [selectedKey, setSelectedKey] = useState<string | null>(() => dateKey(today))
@@ -169,7 +169,19 @@ export function ResearchCalendarPage() {
 
       <div className="mp-reports-split">
         <aside className="mp-reports-picker" aria-label="Select month and day">
-          <p className="mp-reports-picker__label">Test calendar</p>
+          <div className="mp-reports-picker__head">
+            <p className="mp-reports-picker__label">Test calendar</p>
+            <button
+              type="button"
+              className="mp-btn-ghost"
+              onClick={() => void reload()}
+              disabled={loading}
+              aria-label="Refresh calendar data"
+              title="Reload sessions"
+            >
+              ↻
+            </button>
+          </div>
           <div className="mp-reports-picker__toolbar">
             <button
               type="button"
